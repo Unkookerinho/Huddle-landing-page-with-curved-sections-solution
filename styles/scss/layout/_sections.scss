@@ -179,6 +179,15 @@ main {
     }
 }
 
+@media (max-width: 425px) {
+    .last-section {
+        h3 {
+            max-width: 330px;
+        }
+        
+    }
+}
+
 @media (min-width: 1024px) {
     .section__curved {
         &--first::after {
