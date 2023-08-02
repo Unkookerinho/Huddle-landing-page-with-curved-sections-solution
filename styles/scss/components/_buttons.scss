@@ -1,0 +1,57 @@
+nav button {
+    cursor: pointer;
+    padding: 0.3rem 1rem;
+
+    background: none;
+
+    color: $clr-Light-Pink;
+    font-size: 0.65rem;
+
+    border: 1px solid $clr-Light-Pink;
+    border-radius: 50px;
+
+    box-shadow: 0px 0px 3px rgb(223, 146, 159);
+
+    transition: color 0.2s, border 0.2s, box-shadow 0.2s;
+
+    &:hover {
+        color: $hover-Light-Pink;
+        border: 1px solid $hover-Light-Pink;
+        box-shadow: 0px 0px 6px $hover-Light-Pink;
+    }
+}
+
+section button {
+    cursor: pointer;
+    padding: 0.7rem 2.5rem;
+    
+    background-color: $clr-Pink;
+
+    color: white;
+    font-size: 0.8rem;
+    font-weight: $fw-semi-bold-sans;
+
+    border: none;
+    border-radius: 50px;
+
+    box-shadow: 0px 2px 5px rgb(206, 169, 214);
+
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: $clr-Light-Pink;
+    }
+}
+
+// DESKTOP
+
+@media (min-width:1024px) {
+    nav button {  
+        padding: 0.6rem 2rem;
+        font-size: 0.75rem;
+    }
+    section button {
+        padding: 1.2rem 5rem;
+        font-size: 1rem;
+    }
+}

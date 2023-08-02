@@ -1,0 +1,63 @@
+body {
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+
+    h1, h2, h3 {
+        font-family: 'Poppins';
+        color: $clr-Very-Dark-Cyan;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    h3 {
+        font-size: 1.4rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        font-weight: $fw-semi-bold-sans;
+        text-transform: uppercase;
+    }
+    
+    p {
+        color: $clr-Very-Dark-Cyan;
+        font-weight: $fw-semi-bold-sans;
+        font-size: 0.9rem;
+    }
+}
+
+// DESKTOP
+
+@media (min-width:1024px) {
+    html {
+        font-size: 18px;
+    }
+
+    body {
+        h1 {
+            font-size: 2.4rem;
+        }
+
+        h2 {
+            font-size: 1.9rem;
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (min-width:1060px) {
+    body {
+        h1 {
+            font-size: 2.5rem;
+        }
+    }
+}

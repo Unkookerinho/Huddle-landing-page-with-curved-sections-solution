@@ -1,0 +1,92 @@
+.header {
+    padding: 3rem 1.3rem;
+    margin: 3rem 0 4rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 6rem;
+
+    .header-text-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        max-width: 327px;
+
+        p {  
+        line-height: 1.3rem;
+        }
+    }
+
+    .illustration {
+        max-width: 500px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6rem;
+
+        span {
+            display: block;
+            color: $clr-Very-Dark-Cyan;
+            font-size: 3.3rem;
+            font-family: 'Poppins';
+        }
+
+        img {
+            align-self: flex-start;
+            width: 1.75rem;
+        }
+    }
+
+    li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        color: gray;
+        font-size: 0.9rem;
+    }
+}
+
+
+// DESKTOP
+
+@media (min-width:768px) {
+    .header {
+        padding: 3rem; 
+        margin: 3rem 0 8rem 0;
+        .text {
+            max-width: 100%;
+            p {
+                max-width: 500px;
+                line-height: 1.6rem;
+            }
+        }
+
+        ul {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-around;
+            width: 70%;
+        }
+    }
+}
+
+@media (min-width:1024px) {
+    .header .illustration {
+        max-width: 825px;
+    }
+}

@@ -1,0 +1,217 @@
+.section {
+    padding: 0 1.3rem 0 1.3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+
+    margin-bottom: 6rem;
+
+    .illustration {
+        max-width: 270px;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        max-width: 343px;
+    }
+
+    p {
+        line-height: 1.3rem;
+
+    }
+}
+
+.section__default {
+    margin: 13rem 0 17rem 0;
+}
+
+
+.section__curved {
+    &--first {
+        padding: 7rem 1rem 4rem 1rem;
+    }
+    &--second {
+        padding: 3rem 1rem 7.5rem 1rem;
+    }
+
+    position: relative;
+    margin-bottom: 6rem;
+
+    background-color: $clr-Very-Pale-Blue;
+
+    // CURVED BACKGROUNDS
+
+    &--first::before {
+        content: '';
+
+        background: url(/images/bg-section-top-mobile-1.svg) no-repeat;
+        background-size: 100% 8rem;
+        
+        position: absolute;
+        top: -7rem;
+        left: 0;
+        width: 100%;
+        height: 9rem;
+    }
+
+    &--first::after {
+        content: '';
+
+        background: url(/images/bg-section-bottom-mobile-1.svg) no-repeat;
+        background-size: 100% 4rem;
+
+        position: absolute;
+        top: 34.5rem;
+        left: 0;
+        width: 100%;
+        height: 7.25rem;
+    }
+
+    &--second::before {
+        content: '';
+
+        background: url(/images/bg-section-top-mobile-2.svg) no-repeat;
+        background-size: 100% 6rem;
+        
+        position: absolute;
+        top: -5.9rem;
+        left: 0;
+        width: 100%;
+        height: 9rem;
+    }
+
+    &--second::after {
+        content: '';
+
+        background: url(/images/bg-section-bottom-mobile-2.svg) no-repeat;
+        background-size: 100% 7rem;
+
+        position: absolute;
+        top: 33rem;
+        left: 0;
+        width: 100%;
+        height: 7rem;
+    }
+}
+
+// LAST SECTION
+
+.last-section {
+    padding-top: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+main {
+    margin-bottom: 10rem;
+}
+
+// DESKTOP
+
+@media (min-width:768px) {
+    main {
+        margin-bottom: 13rem;
+    }
+
+    .section {
+        padding: 0 3rem 0 3rem;
+
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+
+        text-align: start;
+
+        .illustration {
+            max-width: 314px;
+        }
+
+        .text {
+            max-width: 278px;
+        }
+    }
+
+    .section__default {
+        flex-direction: row;
+    }
+
+    .section__curved {
+        flex-direction: row-reverse;
+        
+        &--first::before {
+            background: url(/images/bg-section-top-desktop-1.svg) no-repeat;
+            background-size: 100% 8rem;
+            top: -7.8rem;
+        }
+
+        &--first::after {
+            background: url(/images/bg-section-bottom-desktop-1.svg) no-repeat;
+            background-size: 100% 8rem;
+
+            top: 16rem;
+            height: 8.25rem;
+        }
+
+        &--second::before {
+            background: url(/images/bg-section-top-desktop-2.svg) no-repeat;
+            background-size: 100% 7rem;
+            top: -6.9rem;
+        }
+
+        &--second::after {
+            background: url(/images/bg-section-bottom-desktop-2.svg) no-repeat;
+            background-size: 100% 7rem;
+            top: 14.5rem;
+            height: 7rem;
+        }
+    }
+    .last-section {
+        padding-top: 6rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .section__curved {
+        &--first::after {
+            top: 14.25rem;
+        }
+
+        &--second::after {
+            top: 13.1rem;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .section {
+        .illustration {
+            max-width: 450px;
+        }
+    
+        .text {
+            max-width: 550px;
+        }
+    }
+    .section__curved {
+        &--first::after {
+            background-size: 100% 8rem;
+            top: 20.42rem;
+            height: 8.25rem;
+        }
+
+        &--second::after {
+            background-size: 100% 8rem;
+            top: 18.8rem; 
+            height: 8rem;
+        }
+    }
+}
