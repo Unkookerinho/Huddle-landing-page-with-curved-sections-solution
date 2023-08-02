@@ -8,5 +8,5 @@ This is a solution to the [Huddle landing page with curved sections challenge on
 
 ### Links
 
-- Solution URL:
-- Live Site URL:
+- Solution URL: https://www.frontendmentor.io/solutions/huddle-landing-page-with-curved-sections-solution-qW7DFc21zQ
+- Live Site URL: https://unkookerinho-huddle-curved-sections.netlify.app
